@@ -1,0 +1,36 @@
+.img-fluid{
+    height:50vh;
+    width:60vw;
+}
+
+body{
+    Background-image:url('../Images/tree.jpg');
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.container{
+    background-color: rgba(100,100,120,.7);
+    height:100%;
+    
+}
+.my-4{
+    margin-top:5%;
+    background-color:grey;
+}
+h5{
+    color:rgb(10, 10, 10);
+}
+.comments{
+    background-color: rgba(221, 207, 190,.5);
+}
+
+.card{
+    margin:2%;
+}
+
+footer{
+    background-color:black;
+    }
