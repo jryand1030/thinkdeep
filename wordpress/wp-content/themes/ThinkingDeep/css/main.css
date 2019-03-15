@@ -9,6 +9,21 @@ body{
     margin:auto;
     
 }
+.title{
+  color:white;
+  text-align: center;
+  margin-top:3%;
+  line-height:80%;
+  width:100%;
+}
+button{
+  margin:2%;
+}
+
+.previous{
+  margin-left:25px;
+}
+
   img{
   height:50%;
   width:100%;

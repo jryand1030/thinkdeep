@@ -10,6 +10,9 @@ body{
     background-attachment: fixed;
     
 }
+button{
+    margin-top:2%;
+}
 
 .container{
     background-color: rgba(100,100,120,.7);

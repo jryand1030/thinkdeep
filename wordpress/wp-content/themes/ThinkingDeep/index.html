@@ -10,24 +10,165 @@
     
 </head>
 <body>
-    <button class=" btn-secondary float-right">
-    <div class="text-right">About the Author</div>
+  <!-- This modal displays the authors information -->
+    <button type="button" class="btn-secondary float-right" data-toggle="modal" data-target=".bd-example-modal-md">
+      <div class="text-right">About the Author</div>
     </button><br><br>
 
-<h3 class="text-center"> Living With Your Eyes Open</h3>
+    
+      <div class="modal fade bd-example-modal-md" tabindex="1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+           
+            <div class="row">
+              <div class="card">
+                <div class="col">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="close"><span aria-hidden="true"></span>X</button>
+                  <div class="card-title authorname">
+                    <h1> Author's Name</h1>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="authordescription">Here is where you write your description of who you are and what makes you special...</p>
+                        <img class="fluid" src="Images/author.jpg">
+                        <p class="secondblurb">Another chance to say something special</p>
+                      </div>
+                    </div>
+
+                    <!-- inside the modal will be a contact form to reach out to the author -->
+                      <h2 class="text-center"> Got some good vibes to share? Please contact the author here.</h2>
+                    <form>
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="First Name">
+                      </div>
+                    </div><br>
+
+                    <div class="form-row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                    </div><br>
+
+                      <div class="row">
+                          <div class="col">
+                            <input type="email" class="form-control" placeholder="Email">
+                          </div>
+                      </div><br>
+
+                      <div class="row">
+                          <div class="col">
+                            <textarea class="form-control" rows="10" id="comment"></textarea>
+                          </div>
+                      </div>
+
+                      <button class="btn btn-secondary btn-md">Submit</button>
+                  </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<h3 class="text-center title"> Living With Your Eyes Open</h3>
 <br>
 
 <!-- Main Navigation buttons -->
-<button class="btn btn-secondary float-left">
+
+<button type="button" class="btn btn-secondary float-left popular" data-toggle="modal" data-target="#exampleModalLong1">
     Most Popular
-</button>
+  </button>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle1">Most Popular Posts</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- this will loop through the various iterations of the posts -->
+          <div class="card">
+          <a href="#">
+          <div class="blogtitle">
+            Blog Title
+          </div>
+          <div class="blogDescription">
+            Blog Description
+          </div>
+          </a>
+          </div>
+          <!-- end loop -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
-<button class="btn btn-secondary float-right">
+
+
+
+
+
+
+
+
+<!-- Here will be a modal displaying the most recent blog posts -->
+
+<button type="button" class="btn btn-secondary float-right previous" data-toggle="modal" data-target="#exampleModalLong">
     Previous Posts
-</button>
-<br><br>
+  </button>
+  <br><br>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Previous Posts</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <!-- this will loop through the various iterations of the posts -->
+            <div class="card">
+                <a href="#">
+                <div class="blogtitle">
+                  Blog Title
+                </div>
+                <div class="blogDescription">
+                  Blog Description
+                </div>
+                </a>
+                </div>
+                <!-- end loop -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
 
 <!-- slider for displaying the featured posts -->
 <div id="demo" class="carousel slide" data-ride="carousel">
